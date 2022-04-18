@@ -10,12 +10,12 @@ class Books(db.Model):
     author: str
     genre: str
     release_date: str
-    # Is release_date a string? It is a year in My SQL
+    # Is release_date a string? It is a year in My SQL. Google this SQL/ORM mapping to get exact types
     number_of_times_checked_out: int
     number_of_current_reservations: int
     location: str
 
-    # Why do we have to do this twice?
+    # Why do we have to do this twice? Earlier part is for JSON. Repeat in customers if need to use for JSON
     id = db.Column(db.Integer, primary_key=True)
     book_name = db.Column(db.String(100), nullable=False)
     author = db.Column(db.String(100), nullable=False)

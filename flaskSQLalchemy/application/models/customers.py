@@ -16,5 +16,8 @@ class Customers(db.Model):
     # Example of relationship:
     # Or was this necessary to link teams to heroes? Even though no foreign key
     # heroes = db.relationship('Heroes', backref='heroes')
+#     In db reference only on one side. In python, have to reference back as well.
+#     So in teams reference heroes and in heroes reference teams.
+#     Use back ref in table that does not have foreign key
 
-# Why wasn't this done twice like in the other one (now books)?
+# Why wasn't this done twice like in the other one (now books)? for json

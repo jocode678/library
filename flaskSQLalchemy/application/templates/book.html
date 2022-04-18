@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Page</title>
+</head>
+<body>
+<div>
+    <p>Testing</p>
+<!--    Added this for testing-->
+{% for book in books %}
+    <p>{{book.id}} {{book.book_name}} {{book.author}} {{book.genre}}</p>
+{% endfor %}
+    <br>
+    {{ message }}
+</div>
+</body>
+</html>
+

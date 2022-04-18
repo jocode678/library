@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hero Page</title>
+    <title>Customer Page</title>
 </head>
 <body>
 <div>
-{% for hero in heroes %}
-   <p>{{hero.id}} {{hero.name}} {{hero.alias}} {{hero.superPower}}</p>
+    <p>Testing</p>
+<!--    Added this for testing-->
+{% for customer in customers %}
+    <p>{{customer.name}}</p>
 {% endfor %}
     <br>
     {{ message }}
