@@ -1,8 +1,8 @@
 from application import db
 
 # from application.models.books import Books
-from models.books import Books
-# from application.models.customers import Customers
+from flaskSQLalchemy.application.models.books import Books
+from flaskSQLalchemy.application.models.customers import Customers
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
