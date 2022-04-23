@@ -25,6 +25,7 @@ def show_customers():
         error = "There are no customers to display"
     return render_template('customer.html', customers=customers, message=error)
 
+# This was provided as an example, unlikely to need this IRL
 @app.route('/book/<int:book_id>', methods=['GET'])
 def show_book(book_id):
     error = ""
@@ -38,6 +39,7 @@ def show_book(book_id):
 
 
 
+# I couldn't do this with books and customers because these tables are not linked.
 
 # @app.route('/teamandheroes/<int:team_id>', methods=['GET'])
 # def team_and_heroes(team_id):

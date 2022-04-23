@@ -9,7 +9,7 @@ from os import getenv
 # create a new instance of Flask and store it in app
 app = Flask(__name__)
 
-# Is this for MACs?
+# This is for MACs (no password)
 # app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:@localhost/superheroes"
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:password@localhost/library"
